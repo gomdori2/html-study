@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>입력 양식 작성하기</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <label for=""
+          >아이디: <input type="text" id="user_id" size="10"
+        /></label>
+        <label for=""
+          >비밀번호: <input type="password" id="user_pw" size="10"
+        /></label>
+        <input type="submit" value="로그인" />
+      </fieldset>
+    </form>
+    <form autocomplete="off">
+      <fieldset>
+        <legend>배송정보</legend>
+        <ul>
+          <li>
+            <label for="user_name">이름</label>
+            <input type="text" id="user_name" />
+          </li>
+          <li>
+            <label for="addr">배송주소</label>
+            <input type="text" id="addr" />
+          </li>
+          <li>
+            <label for="mail">이메일</label>
+            <input type="text" id="mail" />
+          </li>
+          <li>
+            <label for="phone">연락처</label>
+            <input type="tel" id="phone" />
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+    <form autocomplete="off">
+      <fieldset>
+        <legend>상품 선택</legend>
+        <p><b>주문할 상품을 선택해주세요.</b></p>
+        <label><input type="checkbox" value="s3" checked />선물용 3kg</label>
+        <input type="number" name="" id="" min="0" max="5" />개(최대 5개)
+        <label><input type="checkbox" value="s5" />선물용 5kg</label>
+        <input type="range" name="" id="" min="0" max="5" />
+        <label><input type="checkbox" value="f3" />가정용 3kg</label>
+        <label><input type="checkbox" value="f3" />가정용 3kg</label>
+      </fieldset>
+    </form>
+    <input type="text" placeholder="이름을 입력하세요." readonly />
+    <select>
+      <option value="1">삼겹살</option>
+      <option value="2">차돌</option>
+      <option value="3">항정살</option>
+      <option value="4">된찌</option>
+      <option value="5">앞다리살</option>
+    </select>
+  </body>
+</html>
